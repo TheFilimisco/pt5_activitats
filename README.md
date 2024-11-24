@@ -63,7 +63,20 @@ a la direccion de alumno1.
 
 Si estarian apuntando a la misma referencia del Objeto.
 
+### Tercero
 
+1. Crea y prueba una clase que modele un triángulo
+
+* **Atributos**: lado1, lado2, lado3: longitudes de los lados del triángulo (números reales).
+* **Métodos**:
+
+**Constructor por defecto**: los lados tendrán valores 3, 4 y 5.
+
+**Constructor que reciba los valores de los lados como parámetros**
+
+**Método perimetro()**: calcula el perímetro del triángulo.
+
+**Método area()**: calcula el área usando la fórmula de Herón. Referencia.
 
 
 
