@@ -79,5 +79,12 @@ Si estarian apuntando a la misma referencia del Objeto.
 **Método area()**: calcula el área usando la fórmula de Herón. Referencia.
 
 
+### Cuatro
+
+1. **Crea y prueba una clase que emule un contador cíclico de un dígito (0-9)**
+- **Métodos**: restablecer el contador a 0, incrementarlo y consultar su valor.
+
+2. **Extiende el contador cíclico a dos dígitos (0-99)**
+- Usa la clase del ejercicio anterior.
 
 
