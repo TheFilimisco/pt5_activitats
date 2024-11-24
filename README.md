@@ -11,4 +11,7 @@ Crea otra clase llamada PermisoTest con un main que cree dos objetos de tipo Per
 3. Crea una clase CochePermiso:
 Método main que haga lo siguiente:
 Crear un objeto de la clase Coche y otro de la clase PermisoConducir.
-Mostrar un menú con las opciones: a) Modificar información del coche: actualiza el objeto Coche con nuevos datos (modelo y matrícula) solicitados al usuario. b) Modificar información del permiso: actualiza el objeto PermisoConducir con nuevos datos (nombre, tipoPermiso, puntos) solicitados al usuario. c) Mostrar información: muestra todos los valores de los atributos de los objetos Coche y PermisoConducir.
+Mostrar un menú con las opciones: 
+- a) Modificar información del coche: actualiza el objeto Coche con nuevos datos (modelo y matrícula) solicitados al usuario. 
+- b) Modificar información del permiso: actualiza el objeto PermisoConducir con nuevos datos (nombre, tipoPermiso, puntos) solicitados al usuario. 
+- c) Mostrar información: muestra todos los valores de los atributos de los objetos Coche y PermisoConducir.
