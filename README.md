@@ -88,3 +88,47 @@ Si estarian apuntando a la misma referencia del Objeto.
 - Usa la clase del ejercicio anterior.
 
 
+### Cinco
+
+1. **Crea y prueba las clases Position y Player**
+2. **Clase Position**
+- Representa un punto (x, y) en un plano cartesiano.
+- Métodos: constructor por defecto (0, 0), constructor con parámetros (x, y), getters, setters, incrementos y decrementos para las coordenadas (incX, incY, decX, decY) y un método setXY.
+3. **Clase Player**
+- Representa un jugador con posición (Position) y nombre.
+- Métodos: constructor que reciba posición inicial, mover el jugador (moveRight, moveLeft, jump, fall), getters y setters para el nombre y posición.
+4. Crea una clase **Game** con un menú basado en la clase Player:
+
+**Menú de opciones**
+
+- a) Añadir nuevo jugador: crea un nuevo objeto Player solicitando al usuario el nombre y coordenadas iniciales.
+- b) Eliminar jugador: elimina el último jugador creado.
+- c) Reiniciar partida: elimina todos los jugadores creados.
+- d) Mostrar jugadores: imprime la información de todos los jugadores.
+
+_Nota: Usa un vector de hasta 10 jugadores. Si el vector está lleno y se intenta añadir otro jugador, muestra un error._
+
+### Seis
+
+1. Crea una clase Círculo 
+- Atributos: radio.
+- Métodos: calcular perímetro, área y comparar qué círculo es mayor.
+2. Crea una clase Cilindro
+- Atributos: radio de la base y altura.
+- Métodos: calcular área total, volumen y comparar qué cilindro es mayor usando la clase **Círculo**.
+3. Crea una clase Anillo
+- Atributos: modelo, diámetro de paso del dedo (D) en mm y diámetro de la sección del anillo (d) en mm.
+- Cálculos:
+  - Peso del anillo.
+  - Precio del oro: 10 €/g.
+  - Coste total de fabricación: 40 €.
+  - Precio de venta: margen del 210 % sobre el coste total.
+  - Fórmula del volumen del toroide: 
+
+![Project Logo](imgSeis.png).
+
+
+
+
+
+
