@@ -17,7 +17,7 @@ public class Contador {
 
     public  void incrementarContador(){
         if (numero == 9) {
-            System.out.println("No se puede incrementar mas");
+            restablecerContador();
             return;
         } else {
             this.numero++;
@@ -47,8 +47,10 @@ public class Contador {
         contador.incrementarContador();
         contador.incrementarContador();
         contador.incrementarContador();
+        contador.consultarValor();
         contador.incrementarContador();
-
+        contador.incrementarContador();
+        contador.incrementarContador();
         contador.consultarValor();
 
         //Restablecer
