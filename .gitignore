@@ -1,0 +1,7 @@
+# Ignorar la carpeta de compilación
+/out/
+
+# Ignorar la configuración del IDE
+/.idea/
+
+
