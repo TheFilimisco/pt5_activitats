@@ -18,6 +18,7 @@ public class Contador {
     public  void incrementarContador(){
         if (numero == 9) {
             restablecerContador();
+            this.numero=1;
             return;
         } else {
             this.numero++;
