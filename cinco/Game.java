@@ -58,7 +58,11 @@ public class Game {
             System.out.println("No se puede agregar mas Jugadores");
             return;
         }
-        listPlayer.add( new Player(nombre,new Position()));
+        if (nombre.isBlank() || nombre.isEmpty()){
+            listPlayer.add( new Player());
+        } else {
+            listPlayer.add( new Player(nombre,new Position()));
+        }
         System.out.println("Jugador creado correctamente");
     }
 
