@@ -10,33 +10,32 @@ public class Game {
         Scanner input = new Scanner(System.in);
         boolean runing = true;
         int topeVectores = 10;
-        initMenuGame(runing,input,game,listPlayer,topeVectores);
+        game.initMenuGame(runing,input,listPlayer,topeVectores);
     }
 
-    public static void initMenuGame(boolean runing, Scanner input, Game game, ArrayList<Player> listPlayer, int topeVectores) {
+    public  void initMenuGame(boolean runing, Scanner input, ArrayList<Player> listPlayer, int topeVectores) {
         while (runing) {
-            game.imprimirMenuString();
+            imprimirMenuString();
             int option = input.nextInt();
             input.nextLine();
             switch (option){
                 case 1:
-                    game.addNuevoJugador(input,listPlayer,topeVectores);
+                    addNuevoJugador(input,listPlayer,topeVectores);
                     break;
                 case 2:
-                    game.deleteJugador(listPlayer);
+                    deleteJugador(listPlayer);
                     break;
                 case 3:
-                    game.reiniciarPartida(listPlayer);
+                    reiniciarPartida(listPlayer);
                     break;
                 case 4:
-                    game.mostrarTodosJugadores(listPlayer);
+                    mostrarTodosJugadores(listPlayer);
                     break;
                 case 5:
                     runing = false;
                     break;
             }
         }
-
     }
 
     public void imprimirMenuString(){
