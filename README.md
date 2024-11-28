@@ -1,6 +1,6 @@
 ## Parte 1.1. Ejercicios de clases
 
-### Primero
+### Primero: Coche 
 1. **Crea una clase Coche**
 La clase debe tener los atributos modelo y matrícula junto con sus métodos set y get correspondientes.
 Crea otra clase llamada CocheTest con un método main que cree dos objetos de tipo Coche y pruebe sus métodos set y get.
@@ -18,7 +18,7 @@ Mostrar un menú con las opciones:
 - b) Modificar información del permiso: actualiza el objeto PermisoConducir con nuevos datos (nombre, tipoPermiso, puntos) solicitados al usuario. 
 - c) Mostrar información: muestra todos los valores de los atributos de los objetos Coche y PermisoConducir.
 
-### Segundo 
+### Segundo: Preguntas 
 ```java
 public class AlumnoTest {
 public static void main(String[] args) {
@@ -63,7 +63,7 @@ a la direccion de alumno1.
 
 Si estarian apuntando a la misma referencia del Objeto.
 
-### Tercero
+### Tercero : Triangulo
 
 1. Crea y prueba una clase que modele un triángulo
 
@@ -79,7 +79,7 @@ Si estarian apuntando a la misma referencia del Objeto.
 **Método area()**: calcula el área usando la fórmula de Herón. Referencia.
 
 
-### Cuatro
+### Cuatro: Contadores
 
 1. **Crea y prueba una clase que emule un contador cíclico de un dígito (0-9)**
 - **Métodos**: restablecer el contador a 0, incrementarlo y consultar su valor.
@@ -88,7 +88,7 @@ Si estarian apuntando a la misma referencia del Objeto.
 - Usa la clase del ejercicio anterior.
 
 
-### Cinco
+### Cinco: Game
 
 1. **Crea y prueba las clases Position y Player**
 2. **Clase Position**
@@ -108,7 +108,7 @@ Si estarian apuntando a la misma referencia del Objeto.
 
 _Nota: Usa un vector de hasta 10 jugadores. Si el vector está lleno y se intenta añadir otro jugador, muestra un error._
 
-### Seis
+### Seis: Geometria
 
 1. Crea una clase Círculo 
 - Atributos: radio.
