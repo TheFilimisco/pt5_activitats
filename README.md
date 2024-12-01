@@ -117,10 +117,11 @@ _Nota: Usa un vector de hasta 10 jugadores. Si el vector está lleno y se intent
 - Atributos: radio de la base y altura.
 - Métodos: calcular área total, volumen y comparar qué cilindro es mayor usando la clase **Círculo**.
 3. Crea una clase Anillo
-- Atributos: modelo, diámetro de paso del dedo (D) en mm y diámetro de la sección del anillo (d) en mm.
+- Atributos: modelo, diámetro de paso del dedo (D) en mm y diámetro de la sección del anillo (d) en mm, .
 - Cálculos:
   - Peso del anillo.
   - Precio del oro: 10 €/g.
+  - El peso especifico del oro es 19,3 gr/cm^3
   - Coste total de fabricación: 40 €.
   - Precio de venta: margen del 210 % sobre el coste total.
   - Fórmula del volumen del toroide: 
