@@ -26,6 +26,13 @@ public class ContadorDos {
         this.contador2 = contador2;
     }
 
+
+    public void incrementarContadorDos(){
+        getContador1().incrementarContador();
+        getContador2().incrementarContador();
+    }
+
+
     @Override
     public String toString() {
         return "ContadorDos{" + contador1 + contador2 +
@@ -34,8 +41,18 @@ public class ContadorDos {
 
     public static void main(String[] args) {
         ContadorDos contadorDosNumbers = new ContadorDos();
-        contadorDosNumbers.contador1.incrementarContador();
-        contadorDosNumbers.contador2.incrementarContador();
+        System.out.println(contadorDosNumbers);
+        contadorDosNumbers.incrementarContadorDos();
+        contadorDosNumbers.incrementarContadorDos();
+        contadorDosNumbers.incrementarContadorDos();
+        contadorDosNumbers.incrementarContadorDos();
+        contadorDosNumbers.incrementarContadorDos();
+        contadorDosNumbers.incrementarContadorDos();
+        contadorDosNumbers.incrementarContadorDos();
+        contadorDosNumbers.incrementarContadorDos();
+        contadorDosNumbers.incrementarContadorDos();
+        System.out.println(contadorDosNumbers);
+        contadorDosNumbers.incrementarContadorDos();
         System.out.println(contadorDosNumbers);
 
     }
