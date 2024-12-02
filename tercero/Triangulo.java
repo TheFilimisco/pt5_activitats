@@ -41,15 +41,12 @@ public class Triangulo {
         this.lado3 = lado3;
     }
 
-    public void perimetro(){
-        double perimetro =  (getLado1() + getLado2() + getLado3())/2;
-        System.out.println(perimetro);
+    public double perimetro(){
+        return  (getLado1() + getLado2() + getLado3());
     }
 
-    public void area(){
-        double perimetro = (getLado1()+getLado2()+getLado3())/2;
-        double area = Math.sqrt(perimetro * ((perimetro-getLado1()) * (perimetro-getLado2()) * (perimetro-getLado3())));
-        System.out.println(area);
+    public double area(){
+        return Math.sqrt(perimetro()/2 * ((perimetro()/2-getLado1()) * (perimetro()/2-getLado2()) * (perimetro()/2-getLado3())));
     }
 
 
@@ -66,14 +63,16 @@ public class Triangulo {
         // Con valores Predeterminados
         Triangulo triangulo = new Triangulo();
         System.out.println(triangulo);
-        triangulo.perimetro();
-        triangulo.area();
+        System.out.println(triangulo.perimetro());
+        System.out.println(triangulo.area());
+
 
         // Agregando nuevos Valores
         Triangulo triangulo1 = new Triangulo(7,3,9);
         System.out.println(triangulo1);
-        triangulo1.perimetro();
-        triangulo1.area();
+        System.out.println(triangulo1.perimetro());
+        System.out.println(triangulo1.area());
+
     }
 
 }

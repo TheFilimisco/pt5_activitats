@@ -61,21 +61,22 @@ public class Player {
                 '}';
     }
 
-//    public static void main(String[] args) {
-//        Player player = new Player("Joaquin", new Position());
-//        Player anonimo = new Player();
-//        System.out.println(anonimo);
-//        System.out.println(player);
-//        player.moveRight();
-//        System.out.println(player);
-//        player.moveLeft();
-//        System.out.println(player);
-//        player.jump();
-//        System.out.println(player);
-//        player.jump();
-//        System.out.println(player);
-//        player.fall();
-//        System.out.println(player);
-//
-//    }
+
+    public static void main(String[] args) {
+        Player player = new Player("Joaquin", new Position());
+        Player anonimo = new Player();
+        System.out.println(anonimo);
+        System.out.println(player);
+        player.moveRight();
+        System.out.println(player);
+        player.moveLeft();
+        System.out.println(player);
+        player.jump();
+        System.out.println(player);
+        player.jump();
+        System.out.println(player);
+        player.fall();
+        System.out.println(player);
+
+    }
 }
