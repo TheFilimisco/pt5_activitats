@@ -33,6 +33,14 @@ public class ContadorDos {
     }
 
 
+    public void consultarContadorDos() {
+        System.out.print("Primer contador:");
+        getContador1().consultarValor();
+        System.out.print("Segundo contador: ");
+        getContador2().consultarValor();
+    }
+
+
     @Override
     public String toString() {
         return "ContadorDos{" + contador1 + contador2 +
@@ -54,6 +62,7 @@ public class ContadorDos {
         System.out.println(contadorDosNumbers);
         contadorDosNumbers.incrementarContadorDos();
         System.out.println(contadorDosNumbers);
+        contadorDosNumbers.consultarContadorDos();
 
     }
 

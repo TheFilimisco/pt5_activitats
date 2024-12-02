@@ -39,7 +39,7 @@ public class Anillo {
         this.diametroSeccionAnillo = diametroSeccionAnillo;
     }
 
-    public double calcularVolumenAnillo() {
+    private double calcularVolumenAnillo() {
         return Math.pow(Math.PI,2) * (Math.pow(getDiametroSeccionAnillo(),2)/4 * getDiametroPasoDedo());
     }
 

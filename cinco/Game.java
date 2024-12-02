@@ -53,6 +53,10 @@ public class Game {
         System.out.println("======Añadir Nuevo Jugador===");
         System.out.print("Añadir el nombre:");
         String nombre = input.nextLine();
+        System.out.print("Añadir Postion X:");
+        int positionX = input.nextInt();
+        System.out.print("Añadir Postion Y:");
+        int positionY = input.nextInt();
         if (listPlayer.size() == numeroMaximo) {
             System.out.println("No se puede agregar mas Jugadores");
             return;
@@ -60,7 +64,7 @@ public class Game {
         if (nombre.isBlank() || nombre.isEmpty()){
             listPlayer.add( new Player());
         } else {
-            listPlayer.add( new Player(nombre,new Position()));
+            listPlayer.add( new Player(nombre,new Position(positionX,positionY)));
         }
         System.out.println("Jugador creado correctamente");
     }

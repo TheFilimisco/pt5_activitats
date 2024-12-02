@@ -1,10 +1,13 @@
 package seis;
 
 public class Cilindro {
+    private int idCilindro;
     private Circulo radioBase;
     private double altura;
+    private static int numberCirculos;
 
     public Cilindro(double radioBase, double altura) {
+        this.idCilindro = numberCirculos++;
         this.radioBase = new Circulo(radioBase);
         this.altura = altura;
     }
@@ -25,22 +28,31 @@ public class Cilindro {
         this.altura = altura;
     }
 
-    public void calcularAreaTotal() {
+    public double calcularAreaTotal() {
         double areaBases = 2 * Math.PI * Math.pow(getRadioBase().getRadio(),2);
         double areaLateral = ((2 * Math.PI *getRadioBase().getRadio()) * getAltura());
-        System.out.println(areaBases+areaLateral);
+        return  areaBases + areaLateral;
     }
 
-    public void calcularVolumen(){
-        double volumenCilindro = Math.PI * Math.pow(getRadioBase().getRadio(),2) * getAltura();
-        System.out.println(volumenCilindro);
+    public double calcularVolumen(){
+        return Math.PI * Math.pow(getRadioBase().getRadio(),2) * getAltura();
+
     }
+
+    public static Cilindro compararCilindro(Cilindro cilindro1, Cilindro cilindro2) {
+        if (cilindro1.calcularVolumen() > cilindro2.calcularVolumen()) {
+            return  cilindro1;
+        }
+        return cilindro2;
+    }
+
 
 
     @Override
     public String toString() {
         return "Cilindro{" +
-                "radioBase=" + radioBase +
+                "idCilindro=" + idCilindro +
+                ", radioBase=" + radioBase +
                 ", altura=" + altura +
                 '}';
     }
@@ -51,10 +63,12 @@ public class Cilindro {
 
         Cilindro cilindro1 = new Cilindro(3,5);
         Cilindro cilindro2 = new Cilindro(6,5);
-        cilindro.calcularAreaTotal();
-        cilindro.calcularVolumen();
+        System.out.println(cilindro.calcularAreaTotal());
+        System.out.println(cilindro.calcularVolumen());
 
-        System.out.println(Circulo.compararCirculos(cilindro1.getRadioBase(),cilindro2.getRadioBase()));
+        System.out.println(compararCilindro(cilindro1,cilindro2));
+
+
     }
 
 
