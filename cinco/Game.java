@@ -54,9 +54,11 @@ public class Game {
         System.out.print("Añadir el nombre:");
         String nombre = input.nextLine();
         System.out.print("Añadir Postion X:");
-        int positionX = input.nextInt();
+        String positionXInput = input.nextLine();
+        int positionX = positionXInput.isBlank() ? 0 : Integer.parseInt(positionXInput);
         System.out.print("Añadir Postion Y:");
-        int positionY = input.nextInt();
+        String positionYInput = input.nextLine();
+        int positionY = positionYInput.isBlank() ? 0 : Integer.parseInt(positionYInput);
         if (listPlayer.size() == numeroMaximo) {
             System.out.println("No se puede agregar mas Jugadores");
             return;
