@@ -40,13 +40,15 @@ public class PermisoConducir {
     }
 
     public void restarPuntos(int numero) {
-        int puntosActual = getPuntos();
-        if (puntosActual <= 0) {
+//        int puntosActual = getPuntos(); // no hace falta
+
+        if (puntos <= 0) {
             System.out.println("No se puede restar mas puntos");
             return;
         } else {
-            int nuevoPuntaje = puntosActual-numero;
-            setPuntos(nuevoPuntaje);
+            puntos -= numero; // no me gusta el nombre de la variable numero
+//            int nuevoPuntaje = puntos - numero;
+//            setPuntos(nuevoPuntaje);
         }
     }
 

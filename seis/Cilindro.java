@@ -29,23 +29,26 @@ public class Cilindro {
     }
 
     public double calcularAreaTotal() {
-        double areaBases = 2 * Math.PI * Math.pow(getRadioBase().getRadio(),2);
-        double areaLateral = ((2 * Math.PI *getRadioBase().getRadio()) * getAltura());
-        return  areaBases + areaLateral;
+        double areaBases = 2 * Math.PI * Math.pow(getRadioBase().getRadio(), 2);
+        double areaLateral = ((2 * Math.PI * getRadioBase().getRadio()) * getAltura());
+        return areaBases + areaLateral;
     }
 
-    public double calcularVolumen(){
-        return Math.PI * Math.pow(getRadioBase().getRadio(),2) * getAltura();
+    public double calcularVolumen() {
+        return Math.PI * Math.pow(getRadioBase().getRadio(), 2) * getAltura();
 
     }
 
     public static Cilindro compararCilindro(Cilindro cilindro1, Cilindro cilindro2) {
         if (cilindro1.calcularVolumen() > cilindro2.calcularVolumen()) {
-            return  cilindro1;
+            return cilindro1;
         }
         return cilindro2;
     }
 
+    private boolean greaterThan(Cilindro other) {
+        return calcularVolumen() > other.calcularVolumen();
+    }
 
 
     @Override
@@ -58,15 +61,15 @@ public class Cilindro {
     }
 
     public static void main(String[] args) {
-        Cilindro cilindro = new Cilindro(3,5);
+        Cilindro cilindro = new Cilindro(3, 5);
 
 
-        Cilindro cilindro1 = new Cilindro(3,5);
-        Cilindro cilindro2 = new Cilindro(6,5);
+        Cilindro cilindro1 = new Cilindro(3, 5);
+        Cilindro cilindro2 = new Cilindro(6, 5);
         System.out.println(cilindro.calcularAreaTotal());
         System.out.println(cilindro.calcularVolumen());
 
-        System.out.println(compararCilindro(cilindro1,cilindro2));
+        System.out.println(compararCilindro(cilindro1, cilindro2));
 
 
     }

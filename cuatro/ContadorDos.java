@@ -27,9 +27,11 @@ public class ContadorDos {
     }
 
 
-    public void incrementarContadorDos(){
+    public void incrementarContadorDos() {
         getContador1().incrementarContador();
         getContador2().incrementarContador();
+
+        // falta el acarreo
     }
 
 

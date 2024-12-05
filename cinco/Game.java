@@ -10,17 +10,17 @@ public class Game {
         Scanner input = new Scanner(System.in);
         boolean runing = true;
         int topeVectores = 10;
-        game.initMenuGame(runing,input,listPlayer,topeVectores);
+        game.initMenuGame(runing, input, listPlayer, topeVectores);
     }
 
-    public  void initMenuGame(boolean runing, Scanner input, ArrayList<Player> listPlayer, int topeVectores) {
+    public void initMenuGame(boolean runing, Scanner input, ArrayList<Player> listPlayer, int topeVectores) {
         while (runing) {
             imprimirMenuString();
             int option = input.nextInt();
             input.nextLine();
-            switch (option){
+            switch (option) {
                 case 1:
-                    addNuevoJugador(input,listPlayer,topeVectores);
+                    addNuevoJugador(input, listPlayer, topeVectores);
                     break;
                 case 2:
                     deleteJugador(listPlayer);
@@ -38,15 +38,15 @@ public class Game {
         }
     }
 
-    public void imprimirMenuString(){
+    public void imprimirMenuString() {
         System.out.println("""
-                    ========Menu de Opciones======
-                    1. Añadir nuevo jugador
-                    2. Eliminar jugador
-                    3. Reiniciar partida
-                    4. Mostrar Jugadores
-                    5. Salir
-                    """);
+                ========Menu de Opciones======
+                1. Añadir nuevo jugador
+                2. Eliminar jugador
+                3. Reiniciar partida
+                4. Mostrar Jugadores
+                5. Salir
+                """);
     }
 
     public void addNuevoJugador(Scanner input, ArrayList<Player> listPlayer, int numeroMaximo) {
@@ -63,10 +63,10 @@ public class Game {
             System.out.println("No se puede agregar mas Jugadores");
             return;
         }
-        if (nombre.isBlank() || nombre.isEmpty()){
-            listPlayer.add( new Player());
+        if (nombre.isBlank() || nombre.isEmpty()) {
+            listPlayer.add(new Player());
         } else {
-            listPlayer.add( new Player(nombre,new Position(positionX,positionY)));
+            listPlayer.add(new Player(nombre, new Position(positionX, positionY)));
         }
         System.out.println("Jugador creado correctamente");
     }
@@ -85,13 +85,10 @@ public class Game {
 
     public void mostrarTodosJugadores(ArrayList<Player> listPlayer) {
         System.out.println("=========Mostrar Jugadores========");
-        for (Player player : listPlayer){
+        for (Player player : listPlayer) {
             System.out.println(player);
         }
     }
-
-
-
 
 
 }

@@ -20,7 +20,7 @@ public class Circulo {
     }
 
     public double calcularArea() {
-        return  3.14 * Math.pow(getRadio(),2);
+        return 3.14 * Math.pow(getRadio(), 2);
     }
 
     public double calcularPerimetro() {
@@ -28,15 +28,15 @@ public class Circulo {
     }
 
     public static Circulo compararCirculos(Circulo circulo1, Circulo circulo2) {
-        if (circulo1.getRadio() > circulo2.getRadio()) {
-            return  circulo1;
+        if (circulo1.getRadio() > circulo2.getRadio()) { //gerRadio()
+            return circulo1;
         }
         return circulo2;
     }
 
     public Circulo compararCirculos(Circulo circulo) {
-        if (this.getRadio() < circulo.getRadio()) {
-            return  circulo;
+        if (this.getRadio() < circulo.getRadio()) { //gerRadio()
+            return circulo;
         }
         return this;
     }
@@ -51,12 +51,12 @@ public class Circulo {
 
     public static void main(String[] args) {
         Circulo circulo = new Circulo(6);
-        System.out.println( circulo.calcularArea());
-        System.out.println(  circulo.calcularPerimetro());
+        System.out.println(circulo.calcularArea());
+        System.out.println(circulo.calcularPerimetro());
         Circulo circulo1 = new Circulo(8);
         Circulo circulo2 = new Circulo(5);
 
-        System.out.println(compararCirculos(circulo1,circulo2));
+        System.out.println(compararCirculos(circulo1, circulo2));
 
         System.out.println(circulo1.compararCirculos(circulo2));
 

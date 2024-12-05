@@ -1,12 +1,12 @@
 package cinco;
 
 public class Player {
-    private  String nombre;
+    private String nombre;
     private Position position;
-    private final int RIGHT=1;
-    private final int LEFT=1;
-    private final int UP=1;
-    private final int DOWN=1;
+    private final int RIGHT = 1;
+    private final int LEFT = 1;
+    private final int UP = 1;
+    private final int DOWN = 1;
 
     public Player(String nombre, Position position) {
         this.nombre = nombre;
@@ -17,7 +17,6 @@ public class Player {
         this.nombre = "Anonimo";
         this.position = new Position();
     }
-
 
 
     public Position getPosition() {
@@ -37,19 +36,19 @@ public class Player {
     }
 
 
-    public void moveRight(){
-        this.getPosition().incX(RIGHT);
+    public void moveRight() {
+        this.getPosition().incX(RIGHT); // postion.incX();
     }
 
-    public void moveLeft(){
+    public void moveLeft() {
         this.getPosition().decX(LEFT);
     }
 
-    public void jump(){
+    public void jump() {
         this.getPosition().incY(UP);
     }
 
-    public void fall(){
+    public void fall() {
         this.getPosition().decY(DOWN);
     }
 
@@ -57,7 +56,7 @@ public class Player {
     @Override
     public String toString() {
         return "Player{" +
-                "nombre='" + nombre + '\''+ ", "+  position +
+                "nombre='" + nombre + '\'' + ", " + position +
                 '}';
     }
 

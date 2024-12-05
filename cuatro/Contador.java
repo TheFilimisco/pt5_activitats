@@ -11,14 +11,17 @@ public class Contador {
         this.numero = 0;
     }
 
-    public void restablecerContador(){
+    public void restablecerContador() {
         this.numero = 0;
     }
 
-    public  void incrementarContador(){
+    public void incrementarContador() {
+
+        // numero no me gusta
+        // numero = (numero +  1) % 10
         if (numero == 9) {
             restablecerContador();
-            this.numero=1;
+            this.numero = 1;
             return;
         } else {
             this.numero++;

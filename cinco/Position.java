@@ -12,7 +12,9 @@ public class Position {
 
 
     public Position(int point, String side) {
-        if (side.equals("x")){
+
+        // what the fuck!!! modo cachondeo
+        if (side.equals("x")) {
             this.x = point;
             this.y = 0;
         } else if (side.equals("y")) {
@@ -23,7 +25,7 @@ public class Position {
 
     public Position() {
         this.x = 0;
-        this.y= 0;
+        this.y = 0;
     }
 
     public int getX() {
@@ -50,13 +52,15 @@ public class Position {
     public int incX(int valueMovement) {
         return this.x = getX() + valueMovement;
     }
+
     public int incY(int valueMovement) {
-        return this.y = getY() + valueMovement;
+        return this.y = getY() + valueMovement; // this getY() no hacen falta
     }
 
     public int decX(int valueMovement) {
         return this.x = getX() - valueMovement;
     }
+
     public int decY(int valueMovement) {
         return this.y = getY() - valueMovement;
     }

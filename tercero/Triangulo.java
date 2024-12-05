@@ -11,7 +11,7 @@ public class Triangulo {
         this.lado3 = 5;
     }
 
-    public Triangulo(float lado1 , float lado2, float lado3) {
+    public Triangulo(float lado1, float lado2, float lado3) {
         this.lado1 = lado1;
         this.lado2 = lado2;
         this.lado3 = lado3;
@@ -41,12 +41,20 @@ public class Triangulo {
         this.lado3 = lado3;
     }
 
-    public double perimetro(){
-        return  (getLado1() + getLado2() + getLado3());
-    }
+//    public double perimetro(){
+//        return  (getLado1() + getLado2() + getLado3()); // lado1 + lado2 ....
+//    }
 
-    public double area(){
-        return Math.sqrt(perimetro()/2 * ((perimetro()/2-getLado1()) * (perimetro()/2-getLado2()) * (perimetro()/2-getLado3())));
+    public double perimetro() {
+        return lado1 + lado2 + lado3;
+    }
+//    public double area(){
+//        return Math.sqrt(perimetro()/2 * ((perimetro()/2-getLado1()) * (perimetro()/2-getLado2()) * (perimetro()/2-getLado3())));
+//    }
+
+    public double area() {
+        double s = perimetro() / 2;
+        return Math.sqrt(s * (s - lado1) * (s - lado2) * (s - lado3));
     }
 
 
@@ -68,7 +76,7 @@ public class Triangulo {
 
 
         // Agregando nuevos Valores
-        Triangulo triangulo1 = new Triangulo(7,3,9);
+        Triangulo triangulo1 = new Triangulo(7, 3, 9);
         System.out.println(triangulo1);
         System.out.println(triangulo1.perimetro());
         System.out.println(triangulo1.area());
